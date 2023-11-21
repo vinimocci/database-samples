@@ -1,0 +1,17 @@
+
+CREATE TABLE IF NOT EXISTS withdraw (
+    id VARCHAR(50) PRIMARY KEY,
+    amount DECIMAL(10,2) NOT NULL,
+    cpf VARCHAR(11) NOT NULL,
+    pix_key_type VARCHAR(20) NOT NULL,
+    pix_key VARCHAR(255) NOT NULL,
+    status VARCHAR(20) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT now()
+);
+
+CREATE TABLE IF NOT EXISTS auth (
+    system VARCHAR(50) PRIMARY KEY,
+    access_key VARCHAR(255) NOT NULL,
+    key VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT now()
+);
