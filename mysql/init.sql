@@ -1,6 +1,6 @@
 -- Dump 21-11-2023 --
 
-CREATE SCHEMA `partners-dev`;
+-- CREATE SCHEMA `partners-dev`;
 
 USE `partners-dev`;
 
